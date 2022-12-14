@@ -1,5 +1,10 @@
+
 public class Main {
+
     public static void main(String[] args) {
-        SnakeMap game=new SnakeMap();
+
+        GameLogic game = new GameLogic();
+        game.update();
+
     }
 }

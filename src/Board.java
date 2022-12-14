@@ -1,10 +1,16 @@
+import java.util.ArrayList;
+
 public class Board {
-    char[][] matrix = new char[15][15];
+
+    int HEIGTH = 15;
+    int WIDTH = 15;
+    char[][] matrix = new char[HEIGTH][WIDTH];
     char wall = '*';
 
     public Board() {
-
+        setDefaultValues();
     }
+
 
     private void setDefaultValues() {
         for (int i = 0; i < matrix.length; i++) {
@@ -17,4 +23,11 @@ public class Board {
             }
         }
     }
+    public int getHeight () {
+        return HEIGTH;
+    }
+    public int getWidth() {
+        return WIDTH;
+    }
+
 }
