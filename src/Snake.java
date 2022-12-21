@@ -20,13 +20,6 @@ public class Snake {
         this.egg = egg;
         snakeRun();
         eat();
-        if (eaten) {
-            snakeGrow();
-        }
-    }
-
-    private void snakeGrow() {
-
     }
 
     public void snakeRun() {

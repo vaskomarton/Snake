@@ -1,7 +1,6 @@
 public class GameLogic /*implements Runnable */ {
     Board background;
     Food food;
-
     Snake snake;
 
     public GameLogic() {
@@ -13,11 +12,11 @@ public class GameLogic /*implements Runnable */ {
 
     public void update() {
         while (true) {
+            draw();
             snake.snakeUpdate(food);
             if (snake.eaten) {
                 food = new Food(background);
             }
-            draw();
         }
     }
     public void draw() {

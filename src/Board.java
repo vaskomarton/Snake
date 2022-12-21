@@ -6,6 +6,7 @@ public class Board {
     int WIDTH = 15;
     char[][] matrix = new char[HEIGTH][WIDTH];
     char wall = '*';
+    char space = ' ';
 
     public Board() {
         setDefaultValues();
@@ -18,7 +19,7 @@ public class Board {
                 if (i == 0 || j == 0 || i == matrix.length - 1 || j == matrix[i].length - 1) {
                     matrix[i][j] = wall;
                 } else {
-                    matrix[i][j] = ' ';
+                    matrix[i][j] = space;
                 }
             }
         }
